@@ -58,6 +58,8 @@
 <link rel="stylesheet" href="CSS/Header.css">
 <link rel="stylesheet" href="CSS/Slideshow.css">
 
+<script src="JS/Header.js"></script>
+
 <!--CDN's-->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -66,13 +68,9 @@
   <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/v4-shims.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <!--SCRIPT FILES-->
- <script src="JS/header.js"></script>
-  <script src="JS/Slideshow.js"></script>
+ 
    
 </head>
-
-
 <body id="body1">
 <div id="rflheader" class="flex-container">
 <div  id="mysidenav" class="sidenav" >
@@ -170,7 +168,6 @@
   </div>
 </div>
 </div>
-
 </div>
 <!--THIS SECTION IS FOR THE SEARCH BAR IN MOBILE AND TABLETS /  NAVIGATION IN DESKTOP-->
 
@@ -412,11 +409,10 @@
 <li><a href="#" target="_self">Panasonic</a></li>
 <li><a href="#" target="_self">DSLR Cameras</a></li>
 <li> <a href="#" target="_self">Mirrorless</a></li>
-
   </ul>
 </div>
   </div>
-
+  <img src="images/smspekkaer.jpg" style="width: 220px;height:270px;position:relative;top:10px;margin-left:15px">
   </div>
   </div>
 </div>
@@ -478,56 +474,30 @@
   </div>
   </div>
 </div>
+<!--THIS IS FOR THE SLIDESHOW-->
+<div class="slideshow-container">
+<div class="mySlides fade">
+<img src="images/slide6.png">
+</div>
+<div class="mySlides fade">
+  <img src="images/slide2.png">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/slide4.png">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/slide3.png">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/slide5.png">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
 
-   <div class="slide-container fade">
-   
-     <div class="myslide">
-       <img src="images/slide1.png">
-     </div>
-     <div class="myslide">
-      <img src="images/slide3.png" >
-    </div>
-    <div class="myslide">
-      <img src="images/slide4.png" >
-    </div>
-    <div class="myslide">
-      <img src="images/slide6.png">
-    </div>
-    <div class="myslide">
-      <img src="images/slide2.png">
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-   </div>
-  /*
-<script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("myslide");
-    
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    
-    slides[slideIndex-1].style.display = "block";  
-   
-  }
-  </script>
-*/
 
+<script src="JS/Header.js"></script>
+<script src="JS/Slideshow.js"></script>
 </body>
 
 </html>

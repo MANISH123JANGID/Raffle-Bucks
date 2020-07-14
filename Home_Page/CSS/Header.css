@@ -3,7 +3,6 @@
     height: 50px;
     background-color: white;
     position: fixed;
-    background-attachment: fixed;
 }
 
 .flex-container{
@@ -29,6 +28,7 @@
     float: left;
     position: absolute;
     right: 30px;
+    position: fixed;
 }
 
 div .header a:link{
@@ -255,6 +255,7 @@ div .header a:hover{
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.253);
     position: absolute;
     top: 40px;
+    display: none;
 }
 
 
@@ -325,7 +326,8 @@ div .header a:hover{
     z-index: -1;
     background-color: white;
     position: absolute;
-    top: 55px;
+    top: 50px;
+    position: fixed;
 }
 
 .navname{
@@ -342,7 +344,7 @@ div .header a:hover{
     display: block;
     margin-top: 0px;
     background-color: transparent;
-   
+  
 }
 
 
@@ -588,6 +590,7 @@ div .header a:hover{
        top: 0px;
        left: 40px;
     }
+
     #headopt{
       float:right;
         width: 100px;
@@ -596,9 +599,12 @@ div .header a:hover{
         position: absolute;
         right: 10px;
         z-index: 1;
+        position: fixed;
     }
-
-   
+  #rflnav{
+      display: block;
+      position: fixed;
+  }
       
     div .header a:link{
         font-size: 18px;
