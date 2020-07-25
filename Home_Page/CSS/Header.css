@@ -3,6 +3,8 @@
     height: 50px;
     background-color: white;
     position: fixed;
+    background-attachment: fixed;
+    
 }
 
 .flex-container{
@@ -344,7 +346,6 @@ div .header a:hover{
     display: block;
     margin-top: 0px;
     background-color: transparent;
-  
 }
 
 
@@ -365,7 +366,6 @@ div .header a:hover{
     border-radius: 4px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.253);
     background-color : white;
-    
 }
 
 #navbox2{
