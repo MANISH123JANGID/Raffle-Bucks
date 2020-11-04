@@ -49,7 +49,7 @@
         padding: 0px;
         font-family:'Roboto',Helvetica,sans-serif;
         font-size: 100%;
-        background-color: rgb(185, 185, 185);
+        background-color:white;
     }
 </style>
 <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
@@ -57,25 +57,21 @@
 <!--CSS FILES-->
 <link rel="stylesheet" href="CSS/Header.css">
 <link rel="stylesheet" href="CSS/Slideshow.css">
-
-<script src="JS/Header.js"></script>
-
+<link rel="stylesheet" href="CSS/Winnersection.css">
+<link rel="stylesheet" href="CSS/middlesection.css">
 <!--CDN's-->
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/v4-shims.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
- 
    
-</head>
+</head> 
 <body >
 <div id="rflheader" class="flex-container">
 <div  id="mysidenav" class="sidenav" >
-
-<div class="container"><img id="snavimg" src="Images/snavimg.jpg"> <div id="closenav" class="top-right"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></div> </span> <div class="top-left"><span style="font-size: 18px; font-weight:500;background-color: orangered">Welcome To RaffleBucks!</span></div> <div class="bottom-left"><a  id="butlog" type="button" href="#" >Login/Register</a></div>  </div>
+<div class="container" style=""> <div id="closenav" class="top-right"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></div> </span> <div class="top-left"><span style="font-size: 18px; font-weight:500;background-color: transparent">Welcome To RaffleBucks!</span></div> <div class="bottom-left"><a  id="butlog" type="button" href="#" >Login/Register</a></div>  </div>
 <div style="background-color: white;padding-bottom:5px">
  <h3 style="text-align:center;margin-top:0px;position:relative;top:10px;">Shop By Category</h3>
   <a href="#"> <svg style="margin-bottom: -2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>&nbsp; All Categories</a>
@@ -135,12 +131,12 @@
 <div id="headopt">
 <div class="tooltip" id="pos">
  <div class="header" id="usersvg"><a title="User Options" href="#">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+    <svg id="usercolor" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
  </a></div>
  <div class="tooltipopt">
     <div class="verticalmenu" id="vtw">
-   <a href="#"><svg  style="margin-bottom: -2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg><span>&nbsp; Login</span></a>
-  <a href="#"><svg style="margin-bottom: -2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg><span>&nbsp; Register</span></a>
+   <a href="Pages with Home page/Login Page/Login.html"><svg  style="margin-bottom: -2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg><span>&nbsp; Login</span></a>
+  <a href="Pages with Home page/Sign Up Page/Signup.html"><svg style="margin-bottom: -2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg><span>&nbsp; Create Account</span></a>
   <a href="#"><i class="fas fa-wallet"></i><span>&nbsp; My Bucks</span></a>
   <a href="#"><svg style="margin-bottom: -2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg><span>&nbsp; My Wishlist</span></a>
   <a href="#"><svg style="margin-bottom: -2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-truck"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg><span>&nbsp; My Orders</span></a>
@@ -159,7 +155,7 @@
 
 <!--MORE OPTIONS -->
 <div class="tooltip1" id="pos3">
-<div class="header" id="morebtn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg></a></div>
+<div class="header" id="morebtn"><a href="#"><svg id="morecolor" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg></a></div>
 <div class="tooltipopt1">
   <div class="verticalmenu" id="vtw">
     <a href="#"><svg style="margin-bottom: -2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg><span>&nbsp; Help & Support</span></a>
@@ -187,7 +183,7 @@
 
 
   <div class="toolnav" id="electro" style="margin-left: 20px;">
-    <div class="navname"><span >Electronics</span></div>
+    <div class="navname"><span >Mobiles</span></div>
 <div id="navbox1">
 <div class="row">
   <div class="column">
@@ -195,7 +191,7 @@
     <div> <img src="images/mobtab1.jpg" ></div>
   <div style="float: left;">  <h5 style="font-size: 15px;margin-left: 13px;color:black;font-weight:bold;margin-top:0px">Mobile Brands</h5></div>
   <div style="float: left;">  <h5 style="font-size: 15px;margin-left: 20px;color:black;font-weight:bold;margin-top:0px">Tablet Brands</h5></div>
-   
+
       <div class="box">
         <div>
     <ul>
@@ -416,7 +412,7 @@
 
 
 <div class="toolnav"  id="home">
-  <div class="navname"><span>Home Appliances</span></div>
+  <div class="navname"><span>Mobile Accessories</span></div>
 <div id="navbox2">
 
 
@@ -424,14 +420,14 @@
  </div>
 
  <div class="toolnav" id="men">
-   <div class="navname" ><span>Men</span></div>
+   <div class="navname" ><span>Electronics</span></div>
    <div id="navbox3">
 
 
   </div>
 </div>
 <div class="toolnav" id="women">
-  <div class="navname" ><span>Women</span></div>
+  <div class="navname" ><span>Men</span></div>
   <div id="navbox4">
 
 
@@ -440,14 +436,14 @@
    </div> 
 
    <div class="toolnav"  id="baby">
-   <div class="navname"><span>Baby & Kids</span></div>
+   <div class="navname"><span>Women</span></div>
    <div id="navbox5">
 
 
   </div>
  </div>
  <div class="toolnav" id="homeapp">
-   <div class="navname" ><span>Home & Furniture</span></div>
+   <div class="navname" ><span>Baby & Kids</span></div>
    <div id="navbox6">
 
 
@@ -455,7 +451,7 @@
  </div>
 
  <div class="toolnav" id="sports">
-  <div class="navname" ><span>Sports & More</span></div>
+  <div class="navname" ><span>Lotteries</span></div>
   <div id="navbox7">
 
 
@@ -475,20 +471,28 @@
 <div style="position: absolute;top: 90px;width: 100%;z-index:-1000;">
 <div class="slideshow-container" >
 <div class="containers">
-<div class="mySlides fade">
-<img src="images/slide6.png">
-</div>
+
 <div class="mySlides fade">
   <img src="images/slide2.png">
   </div>
-  <div class="mySlides fade">
-    <img src="images/slide4.png">
-    </div>
+  
     <div class="mySlides fade">
       <img src="images/slide3.png">
       </div>
       <div class="mySlides fade">
+        <img src="images/slide1.png">
+      </div>
+      <div class="mySlides fade">
         <img src="images/slide5.png">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/slide6.png">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/slide8.png">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/slide9.png">
       </div>
       <a  onclick="plusSlides(-1)">  <div class="prev">&#10094;</div></a>
 <a  onclick="plusSlides(1)"><div class="next">&#10095;</div></a>
@@ -501,30 +505,32 @@
   <span class="dot" onclick="currentSlide(5)"></span>
    </div>
 </div>
-<div class="slideshow-container1" > 
-  <div class="containers">
-  <div class="mySlides1 fade1">
-    <img src="images/lotto4.png">
-    </div>
-    <div class="mySlides1 fade1">
-      <img src="images/lotto5.png">
-      </div>
-      <div class="mySlides1 fade1">
-        <img src="images/lotto9.jpg">
-        </div>
-        <a  onclick="plusSlides1(-1)"><div class="prev">&#10094;</div></a>
-        <a  onclick="plusSlides1(1)"><div class="next">&#10095;</div></a>
-  </div>
-<div id="dotsty1"> 
-  <span class="dot" onclick="currentSlide1(1)"></span> 
-  <span class="dot" onclick="currentSlide1(2)"></span> 
-  <span class="dot" onclick="currentSlide1(3)"></span>
-  <span class="dot" onclick="currentSlide1(4)"></span> 
-  <span class="dot" onclick="currentSlide1(5)"></span>
-   </div>
+
+<!--THIS SECTION IS FOR SHOWING HIGHLIGHTS-->
+
+<section>
+<div id="winner-sec">
+<div id="redirect">
+<h1 >LATEST WINNERS</h1>
+<h3>“Opportunities come infrequently. When it rains gold, put out the bucket, not the thimble”
+  ― <b>Warren Buffett</b></h3>
+  <button id="grab" type="button">Play Now!</button>
 </div>
+<div id="winner-card"></div>
+
 </div>
 
+</section>
+<div class="banner"><a href="#"><img src="images/dis.png"></a></div>
+<div class="catebox">
+<div class="dealtitle"><h1 style="border-bottom: 2px solid black;">MALAMAAL DEALS</h1></div>
+<div class="imgbox"> 
+ <a href="#"><img src="images/MOBILE/AUDIO.png"></a>
+ <a href="#"><img src="images/MOBILE/SMARTWATCH.png"></a>
+ <a href="#"><img src="images/MOBILE/LAPTOPS.png"></a>
+ <a href="#"><img src="images/MOBILE/HEADPHONES.png"></a>
+</div>
+</div>
 
 <script src="JS/Header.js"></script>
 <script src="JS/Slideshow.js"></script>

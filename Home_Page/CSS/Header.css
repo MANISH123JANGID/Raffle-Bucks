@@ -97,9 +97,7 @@ div .header a:hover{
 }
 .verticalmenu a:hover{
     color: orangered;
-    
    background-color: white;
-
     transition-duration: .3s; 
 }
 .verticalmenu a:active{
@@ -147,9 +145,6 @@ div .header a:hover{
 #pos3{
     margin-left: 30px; float: left; margin-top: 15px;
 }
-
-
-
 
 /*THIS IS FOR SEARCH BAR */
 .search {
@@ -311,7 +306,8 @@ div .header a:hover{
     height:40px;
     width: 100%;
     z-index: -1;
-    background-color: white;
+    color: white;
+    background-color: orangered;
     position: absolute;
     top: 50px;
     position: fixed;
@@ -338,8 +334,8 @@ div .header a:hover{
 
 
 .toolnav:hover{
-    color: orangered;
-    border-bottom: 2px solid orangered;
+    color: black;
+    border-bottom: 2px solid black;
     cursor: pointer;
 }
 
@@ -679,17 +675,17 @@ div .header a:hover{
     margin-top: -20px;
 }
 
-#topsec a:hover{
-   
-}
+
 
 .container{
+    height: 80px;
     margin-top: -30px;
     position: relative;
     text-align: center;
     color: black;
     background-color: white;
     border-bottom: 1px solid orangered;
+    background-image: linear-gradient(to right,#667eea,#764ba2);
 }
 
 .top-left{
@@ -711,9 +707,11 @@ div .header a:hover{
 }
 
 .bottom-left{
+    
     position: absolute;
-    left: 20px;
-    bottom: 20px;
+    left: 10px;
+    top: 40px;
+    
 }
 
 #butlog{
@@ -722,6 +720,7 @@ div .header a:hover{
 
 #butlog:hover{
     background-color: orangered;
-    color: black;
+    color: white;
+    opacity: .8;
     transition-duration: .3s;
 }

@@ -2,13 +2,14 @@ $(document).ready(function(){
     // Show hide popover
     $("#usersvg").mouseover(function(){
         $(".tooltipopt").fadeIn(100);
+        $("#usercolor").css("color","orangered");
     });
     });
   
   
   $(document).ready(function(){
   $('.tooltipopt ,.tooltip').on("mouseleave",function(){
-    
+    $("#usercolor").css("color","black");
     $(".tooltipopt").fadeOut(300);
   });
   });
@@ -18,13 +19,14 @@ $(document).ready(function(){
     // Show hide popover
     $("#morebtn").mouseover(function(){
         $(".tooltipopt1").fadeIn(100);
-       
+        $("#morecolor").css("color","orangered");
     });
   });   
   
   $(document).ready(function(){
   $('.tooltipopt1,.tooltip1').on("mouseleave",function(){
     $(".tooltipopt1").fadeOut(300);
+    $("#morecolor").css("color","black");
   });
   });
 
@@ -105,7 +107,6 @@ $( "body" ).click(function( event ) {
     // Show hide popover
     $("#women").mouseover(function(){
         $("#navbox4").fadeIn(100);
-       
     });
   });   
   
