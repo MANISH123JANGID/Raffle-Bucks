@@ -1,6 +1,6 @@
 .banner{
     width: 80%;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 10%;
 }
 
@@ -15,41 +15,114 @@
  }
 .catebox {
     width: 80%;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 10%;
     background-color: white;
-    height: 500px;
-   
 }
 
 .catebox .dealtitle{
    margin: auto;
-    width: 50%;
+    width: 80%;
     text-align: center;
-   
     font-size: unset;
     font-family: monospace;
     letter-spacing: 2px;
     word-spacing: 3px;
     font-weight: 100;
-    font-size: 15px;
-    background-color:white;
+    font-size: 20px;
+    background-color: white;
 }
+.dealtitle .status{
+    justify-content: center;
+}
+ .status{
+    text-align: center;
+    position: relative;
+    margin-left: 30%;
+    margin-top: -15px;
+    width: 40%;
+    margin-left: 30%;
+    justify-content: center;
+    color: white;
+    background-color: orangered;
+   background-image: linear-gradient(to right,#667eea,#764ba2); 
+    border-radius: 20px;
+}
+
+
+
+
+
+  .ml15 {
+    font-weight: 100;
+    font-size:30px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+  
+  .ml15 .word {
+    display: inline-block;
+    line-height: 1em;
+  }
+  .ml16 {
+    font-weight: 100;
+    font-size:30px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+  
+  .ml16 .word {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  .ml17 {
+    font-weight: 100;
+    font-size:30px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+  
+  .ml17 .word {
+    display: inline-block;
+    line-height: 1em;
+  }
+/*===============================*/
 
   .catebox .imgbox{
     position: relative;
-    top: 20px;
+    top: 0px;
     background-color: white;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-flow:wrap;
 }
+.imgbox div{
+    width: 250px;
+background-color: white;
+}
+ .imgbox div img{
+     width: 100%;
+ }
+ .catebox .imgbox1{
+    position: relative;
+    top: 20px;
+    background-color:white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow:wrap;
+}
+.imgbox1 div{
+    width: 250px;
+background-color: white;
+}
+ .imgbox1 div img{
+     width: 100%;
+     border-radius: 5px;
+ }
 
- .imgbox  img{
-    width:80%;
-    border-radius: 5px;
-    margin-left: 8%;
-}
 
 .catebox img:hover{
     transform: scale(1.02);
@@ -60,7 +133,7 @@
     .banner{
         width: 90%;
         margin-left: 5%;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     .banner img{
         width: 100%;
@@ -68,28 +141,73 @@
         border-radius: 5px;
     }
    .catebox .dealtitle{
-        font-size: 10px;
-        width: 70%;
+        font-size: unset;
+        width: 100%;
+        font-weight: 600;
+        top: 10px;
+
     }
     .catebox .imgbox{
         position: relative;
     top:10px;
+    justify-content: space-around;
+
     }
+    .imgbox div{
+        width: 150px;
+    background-color:white;
+    margin-top: 0;
+    }
+
     .catebox {
         width: 90%;
         margin-left: 5%;
     }
     
- .imgbox{
-        width: 80%;
-        margin-left: 10%;
-       display:grid;
-       justify-content: space-around;
+    .imgbox  img{
+        border-radius: 5px;
     }
-     .imgbox img{
-width: 80%;
-    }
-    
- 
 
+    .catebox .imgbox1{
+        position: relative;
+        top: 20px;
+        background-color:white;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-flow:wrap;
+    }
+    .imgbox1 div{
+        width: 200px;
+    background-color: white;
+    }
+     .imgbox1 div img{
+         width: 100%;
+         border-radius: 5px;
+     }
+
+     .status{
+         margin-top: -10px;
+ width: 60%;
+ margin-left: 20%;
+
+     }
+     .ml15 {
+        font-weight: 100;
+        font-size:20px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+      }
+      .ml16 {
+        font-weight: 100;
+        font-size:20px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+      }
+      .ml17 {
+        font-weight: 100;
+        font-size:20px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+      }
 }
