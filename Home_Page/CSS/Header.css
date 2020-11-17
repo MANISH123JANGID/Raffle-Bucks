@@ -159,25 +159,30 @@ div .header a:hover{
     border-right: none;
     padding: 5px;
     height: 20px;
-    border-radius: 0px 0 0 0px;
+    border-radius: 5px 0px 0px 5px;
     outline: none;
-    color: #9DBFAF;
+    color: red;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgba(235, 235, 235, 0.877);
   }
   
   .searchTerm:focus{
-    color: orangered;
+    color: black;
+    background-color: white;
+    transition-duration: .3s;
   }
   
   .searchButton {
-    width: 40px;
+    width: 130px;
     height: 36px;
     border:0px solid orangered;
     background: orangered;
     text-align: center;
     color: #fff;
-    border-radius: 0 0px 0px 0;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
   }
   
   /*Resize the wrap to see the search bar change!*/
@@ -262,7 +267,7 @@ div .header a:hover{
     padding: 5px;
     height: 35px;
     outline: none;
-    border-radius: 0px 0 0 0px;
+    border-radius: 5px 0 0 5px;
   
     box-sizing: border-box;
     color: black;
@@ -280,12 +285,12 @@ div .header a:hover{
     height: 35px;
     box-sizing: border-box;
     border-left: none;
-    border: 1px solid orangered;
+    border: 2px solid orangered;
     
     background:orangered;
     text-align: center;
     color: white;
-    border-radius: 0 2px 2px 0;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 14px;
     font-weight: lighter;
