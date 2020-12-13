@@ -1,7 +1,7 @@
 #rflheader {
     width: 100%;
     height: 50px;
-    background-color: white;
+    background-color: black;
     position: fixed;
     background-attachment: fixed;
     
@@ -16,7 +16,7 @@
 
 #rfllogo{
     height: 40px;
-    max-width: 250px;
+    max-width: 700px;
     float: left;
     position: absolute;
     left: 10px;
@@ -24,9 +24,9 @@
 }
 
 #headopt{
-    background-color: transparent;
+    background-color:transparent;
     width: 180px;
-    height: 50px;
+    height: 30px;
     float: left;
     position: absolute;
     right: 30px;
@@ -44,16 +44,20 @@ div .header a:visited{
    text-decoration: none;
    font-size: 22px;
    text-decoration: none;
+   
 }
 div .header a:hover{
     color: orangered; 
     font-size: 22px;
     transition-duration: .3s;
     text-decoration: none;
+    
+   
  }
  div.header a:active{
     color: orangered;
     text-decoration:underline;
+     
     font-size: 22px;
     text-decoration: none;
  }
@@ -72,7 +76,7 @@ div .header a:hover{
  
  .verticalmenu{
      width: 180px;
-    background-color:white;
+    background-color:black;
     border: none;
     border-radius: 3px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.253);
@@ -89,16 +93,19 @@ div .header a:hover{
     font-weight: 100;
 }
 .verticalmenu a:link{
-    color:black;
+    color:white;
 }
 .verticalmenu a:visited{
-    background-color: white;
-    color:black;
+    background-color:  black;
+    color:white;
 }
 .verticalmenu a:hover{
     color: orangered;
-   background-color: white;
+    
+    transform:scale(1.03);
+    font-weight: 900;
     transition-duration: .3s; 
+    
 }
 .verticalmenu a:active{
     color: orangered;
@@ -154,12 +161,12 @@ div .header a:hover{
   }
   
   .searchTerm {
+      border-radius: 5px 0px 0px 5px;
     width: 100%;
     border: 3px solid orangered;
     border-right: none;
     padding: 5px;
     height: 20px;
-    border-radius: 5px 0px 0px 5px;
     outline: none;
     color: red;
     font-size: 15px;
@@ -202,23 +209,37 @@ div .header a:hover{
   #opensidenav{
     position: absolute;left: 8px;top: 7px; font-size:20px;cursor:pointer;font-weight: lighter; 
     display: none;
+     
   }
 
-  .sidenav {
+  #sidenav {
     height: 100%;
-    width: 270px;
-    position: fixed;
+    width: 300px;
+    left: -300px;
+    position:fixed;
     z-index: 1;
     top: 0px;
-    left: 0;
+     opacity: 1;
     background-color: rgba(235, 235, 235, 0.877);
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 30px;
-   display: none; 
+     
+  }
+  #sidenav.enter{
+      left: 0px;
+      opacity: 1;
+  }
+  #sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
   }
   
-  .sidenav a {
+  
+  #sidenav a {
     padding: 2px 10px;
     text-decoration: none;
     font-size: 17px;
@@ -227,8 +248,26 @@ div .header a:hover{
     transition: 0.3s;
   }
   
-  .sidenav a:hover {
-    color: orangered;
+  #sidenav a:hover {
+    color: black;
+    background-color: white;
+    background:rgba(255,255,255, 0.5);
+    transition-duration: .5s;
+  }
+  #closenav
+  {
+    cursor: pointer;
+    
+  }
+  #closenav :hover{
+    background:rgba(255,255,255, 0.5);
+    font-size: 15px;
+  }
+/* .............Trying some Features...............*/
+  
+@media screen and (max-height: 450px) {
+    #sidenav {padding-top: 15px;}
+    #sidenav a {font-size: 18px;}
   }
 
  
@@ -568,11 +607,11 @@ div .header a:hover{
 
     #rflheader{
         height: 40px;
-        background-color: white ;
+        background-color: black ;
     }
     #rfllogo{
        height: 30px;
-       max-width: 125px;
+       max-width: 200px;
        position: absolute;
        top: 0px;
        left: 40px;
@@ -591,6 +630,7 @@ div .header a:hover{
   #rflnav{
       display: block;
       position: fixed;
+      background-color: black;
   }
       
     div .header a:link{
@@ -689,7 +729,7 @@ div .header a:hover{
     text-align: center;
     color: black;
     background-color: white;
-    border-bottom: 1px solid orangered;
+  
     background-image: linear-gradient(to right,#667eea,#764ba2);
 }
 

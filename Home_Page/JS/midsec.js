@@ -1,56 +1,9 @@
 
 
-  anime.timeline({loop: true})
-  .add({
-    targets: '.ml15 .word',
-    scale: [5,1],
-    opacity: [0,1],
-    easing: "easeOutCirc",
-    duration: 500,
-    delay: (el, i) => 500 * i
-  }).add({
-    targets: '.ml15',
-    opacity: 0,
-    duration: 200,
-    easing: "easeOutExpo",
-    delay: 5000
-  });
-
-  anime.timeline({loop: true})
-  .add({
-    targets: '.ml16 .word',
-    scale: [5,1],
-    opacity: [0,1],
-    easing: "easeOutCirc",
-    duration: 500,
-    delay: (el, i) => 500 * i
-  }).add({
-    targets: '.ml16',
-    opacity: 0,
-    duration: 200,
-    easing: "easeOutExpo",
-    delay: 5000
-  });
-
-  anime.timeline({loop: true})
-  .add({
-    targets: '.ml17 .word',
-    scale: [5,1],
-    opacity: [0,1],
-    easing: "easeOutCirc",
-    duration: 500,
-    delay: (el, i) => 500 * i
-  }).add({
-    targets: '.ml17',
-    opacity: 0,
-    duration: 200,
-    easing: "easeOutExpo",
-    delay: 5000
-  });
-
+  
 
   // Set the date we're counting down to
-  var countDownDate = new Date("Nov 8, 2020 13:34:00").getTime();
+  var countDownDate = new Date("Nov 28, 2020 13:34:00").getTime();
   
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -76,7 +29,7 @@
       clearInterval(x);
       document.getElementById("coming").innerHTML = "Live";
       document.getElementById("soon").innerHTML = "Now!";
-      var countDownDate1 = new Date("Nov 8, 2020 13:39:00").getTime();
+      var countDownDate1 = new Date("Nov 30, 2020 13:39:00").getTime();
       document.getElementById("demo").innerHTML = "00d " + "00h "
        + "00m " + "00s " +"LEFT";
       // Update the count down every 1 second
@@ -111,7 +64,7 @@
     }
   }, 1000);
 
-  var countDownDate1 = new Date("Nov 9, 2020 13:39:00").getTime();
+  var countDownDate1 = new Date("Nov 25, 2020 13:39:00").getTime();
  
   // Update the count down every 1 second
   var x1 = setInterval(function() {
@@ -129,7 +82,7 @@
     var seconds1 = Math.floor((distance1 % (1000 * 60)) / 1000);
   
     // Display the result in the element with id="demo"
-    document.getElementById("demo1").innerHTML = hours1 + "h "
+    document.getElementById("demo1").innerHTML = days1+"d "+ hours1 + "h "
     + minutes1 + "m " + seconds1 + "s " +"LEFT";
   
     // If the count down is finished, write some text
