@@ -204,21 +204,34 @@ div .header a:hover{
     display: none;
   }
 
-  .sidenav {
+  #sidenav {
     height: 100%;
-    width: 270px;
-    position: fixed;
+    width: 300px;
+    left: -300px;
+    position:fixed;
     z-index: 1;
     top: 0px;
-    left: 0;
-    background-color: rgba(235, 235, 235, 0.877);
+     opacity: 1;
+   background-color: red;
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 30px;
-   display: none; 
+     
+  }
+  #sidenav.enter{
+      left: 0px;
+      opacity: 1;
+  }
+  #sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
   }
   
-  .sidenav a {
+  
+  #sidenav a {
     padding: 2px 10px;
     text-decoration: none;
     font-size: 17px;
@@ -227,10 +240,21 @@ div .header a:hover{
     transition: 0.3s;
   }
   
-  .sidenav a:hover {
-    color: orangered;
+  #sidenav a:hover {
+    color: black;
+    background-color: white;
+    background:rgba(255,255,255, 0.5);
+    transition-duration: .5s;
   }
-
+  #closenav
+  {
+    cursor: pointer;
+    
+  }
+  #closenav :hover{
+    background:rgba(255,255,255, 0.5);
+    font-size: 15px;
+  }
  
 /* THIS  IS FOR THE NAVIGATION IN DESKTOP AND FOR SEARCH BAR IN MOBILE AND TABLETS */
 
@@ -689,7 +713,6 @@ div .header a:hover{
     text-align: center;
     color: black;
     background-color: white;
-    border-bottom: 1px solid orangered;
     background-image: linear-gradient(to right,#667eea,#764ba2);
 }
 
