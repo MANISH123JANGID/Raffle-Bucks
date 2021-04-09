@@ -3,7 +3,7 @@
   
 
   // Set the date we're counting down to
-  var countDownDate = new Date("Dec 28, 2020 13:34:00").getTime();
+  var countDownDate = new Date("Mar 28, 2021 13:34:00").getTime();
   
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -29,7 +29,7 @@
       clearInterval(x);
       document.getElementById("coming").innerHTML = "Live";
       document.getElementById("soon").innerHTML = "Now!";
-      var countDownDate1 = new Date("Dec 30, 2020 13:39:00").getTime();
+      var countDownDate1 = new Date("Mar 30, 2021 13:39:00").getTime();
       document.getElementById("demo").innerHTML = "00d " + "00h "
        + "00m " + "00s " +"LEFT";
       // Update the count down every 1 second
@@ -64,7 +64,7 @@
     }
   }, 1000);
 
-  var countDownDate1 = new Date("Nov 25, 2020 13:39:00").getTime();
+  var countDownDate1 = new Date("Mar 22, 2021 13:39:00").getTime();
  
   // Update the count down every 1 second
   var x1 = setInterval(function() {

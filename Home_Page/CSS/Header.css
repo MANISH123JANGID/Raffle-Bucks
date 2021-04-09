@@ -32,7 +32,8 @@
     position: fixed;
     right: 30px;
     background-color:transparent;
-    z-index: 0;
+    z-index: 10;
+    cursor: pointer;
 }
 
 div .header a:link{
@@ -73,11 +74,10 @@ div .header a:hover{
     position: fixed;
      width: 100%;
      height: 100%;
-     display: none;
      top: 0;
      right: 0;
      background-color: rgba(0,0,0,.3);
-     z-index: 100;
+     z-index: 100000;
  }
  .overlay2{
     position: fixed;
@@ -97,12 +97,7 @@ div .header a:hover{
 }
 
 
-  .tooltip .tooltipopt{
-    position: relative;
-    left: -70px;
-    top: 35px;
-    z-index: 1000000;
-}
+  
  
  .verticalmenu{
 position: relative;
@@ -111,10 +106,11 @@ left: 1300px;
      width: 180px;
     background-color:white;
     border: none;
+    display: block;
     border-radius: 3px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.253);
     padding: 0px;
-    z-index: 10111;
+    z-index: 0;
 }
 /*POSITION FOR MORE OPTION TOOLBOX*/
 #vtw{
@@ -150,7 +146,7 @@ left: 1300px;
 .tooltip1{
     position: relative;
     display:block;
-    height: 50px;
+    height: 40px;
     
 }
 
@@ -311,7 +307,7 @@ left: 1300px;
   #sidenav a:hover {
     color: black;
     background-color: white;
-    background:rgba(255,255,255, 0.5);
+    background:rgba(126, 126, 126, 0.3);
     transition-duration: .5s;
   }
   #closenav
@@ -657,10 +653,6 @@ left: 1300px;
     .search {
         display: none;
       }  
-
-      .header{
-          z-index: 00;
-      }
     #rflheader{
         height: 40px;
         background-color: white ;
@@ -681,9 +673,10 @@ left: 1300px;
         position: absolute;
         right: 10px;
        position: fixed;
-       z-index: 0;
+       z-index: 1000;
        cursor: pointer;
        display: block;
+       
     }
     #backover{
         position:fixed;
@@ -748,7 +741,7 @@ left: 1300px;
     }
 
     .dis{
-        display: none;
+        display: block;
     }
 
   .tooltip1{
@@ -822,7 +815,6 @@ left: 1300px;
 #snavimg{
     width: 270px;
     height: 130px;
-    opacity: ;
 }
 
 .top-right{

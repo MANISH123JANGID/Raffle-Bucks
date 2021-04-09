@@ -4,10 +4,8 @@ $(document).ready(function(){
         $(".overlay1").fadeIn(300);
         $(".verticalmenu").css("display","block");
         $("#usercolor").css("color","orangered");
-
     });
     });
-  
   
   $(document).ready(function(){
   $('.verticalmenu ,.tooltip').on("mouseleave",function(){
@@ -16,16 +14,13 @@ $(document).ready(function(){
     $(".overlay1").css("display","none");
   });
   });
-  
-  
+
   $(document).ready(function(){
     // Show hide popover
     $("#morebtn").mouseover(function(){
         $(".overlay2").fadeIn(300);
-
         $(".verticalmenu").css("display","block");
         $("#morecolor").css("color","orangered");
-       
     });
   });   
   
