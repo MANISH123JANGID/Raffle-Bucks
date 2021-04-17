@@ -73,6 +73,7 @@ div .header a:hover{
 .overlay1{
     position: fixed;
      width: 100%;
+     display: none;
      height: 100%;
      top: 0;
      right: 0;
