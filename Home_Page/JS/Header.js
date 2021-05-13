@@ -1,55 +1,45 @@
 $(document).ready(function(){
-    // Show hide popover
-    $("#usersvg").mouseover(function(){
-        $(".overlay1").fadeIn(300);
-        $(".verticalmenu").css("display","block");
-        $("#usercolor").css("color","orangered");
-    });
-    });
-  
-  $(document).ready(function(){
-  $('.verticalmenu ,.tooltip').on("mouseleave",function(){
-    $("#usercolor").css("color","black");
-    $(".verticalmenu").fadeOut(300);
-    $(".overlay1").css("display","none");
+  // Show hide popover
+  $("#usersvg").mouseover(function(){
+   
+      $(".tooltipopt").slideDown(200);
+      $("#usercolor").css("color","#4568dc");
+     
   });
   });
 
-  $(document).ready(function(){
-    // Show hide popover
-    $("#morebtn").mouseover(function(){
-        $(".overlay2").fadeIn(300);
-        $(".verticalmenu").css("display","block");
-        $("#morecolor").css("color","orangered");
-    });
-  });   
-  
-  $(document).ready(function(){
-  $('.verticalmenu,.tooltip1').on("mouseleave",function(){
-    $(".verticalmenu").fadeOut(300);
-    $("#morecolor").css("color","black");
-    $(".overlay2").css("display","none");
-  });
-  });
 
-/* THIS IS FOR THE NOTIFICATION BOX*/
+$(document).ready(function(){
+$('.closeblocker').on("mouseleave",function(){
+  
+  $("#usercolor").css("color","black");
+  $(".tooltipopt").slideUp(200);
+ 
+});
+});
+
+
 $(document).ready(function(){
   // Show hide popover
-  $("#usernoti").mouseover(function(){
-      $(".tooltipopt2").fadeIn(100);
-      $(".overlay").css("display","block");
+  $("#morebtn").mouseover(function(){
+      $(".tooltipopt1").slideDown(200);
+      $("#morecolor").css("color","#4568dc");
+  });
+});   
 
-      $("#notisvg").css("color","orangered");
-      
-  });
-  });
+$(document).ready(function(){
+$('.closeblocker').on("mouseleave",function(){
+  $(".tooltipopt1").slideUp(300);
+  $("#morecolor").css("color","black");
+});
+});
 
 
 $(document).ready(function(){
 $('.tooltipopt2 ,.tooltip').on("mouseleave",function(){
   $("#notisvg").css("color","black");
   $(".tooltipopt2").fadeOut(300);
-  $(".overlay").css("display","none");
+  
 });
 });
 

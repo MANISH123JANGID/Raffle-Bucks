@@ -121,7 +121,6 @@ background-color: white;
  .imgbox1 div img{
      width: 100%;
      border-radius: 5px;
-   
  }
  .catebox .imgbox2{
   position: relative;
@@ -139,12 +138,17 @@ background-color:  transparent;
 .imgbox2 div img{
    width: 100%;
    border-radius: 10px;
+   
+  
+
 }
 
 
 .catebox img:hover{
-    transform: scale(1.02);
-    transition-duration: .3s;
+    transform: scale(1.03);
+    transition: .5s;
+   
+    
 }
 
 /*class for timer */

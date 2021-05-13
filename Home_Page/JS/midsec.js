@@ -29,7 +29,7 @@
       clearInterval(x);
       document.getElementById("coming").innerHTML = "Live";
       document.getElementById("soon").innerHTML = "Now!";
-      var countDownDate1 = new Date("Mar 30, 2021 13:39:00").getTime();
+      var countDownDate1 = new Date("April 27, 2021 13:39:00").getTime();
       document.getElementById("demo").innerHTML = "00d " + "00h "
        + "00m " + "00s " +"LEFT";
       // Update the count down every 1 second
@@ -64,7 +64,7 @@
     }
   }, 1000);
 
-  var countDownDate1 = new Date("Mar 22, 2021 13:39:00").getTime();
+  var countDownDate1 = new Date("April 28, 2021 13:39:00").getTime();
  
   // Update the count down every 1 second
   var x1 = setInterval(function() {
