@@ -1,9 +1,9 @@
-
+//THIS IS FOR THE MID NIGHT DEALS 
 
   
 
   // Set the date we're counting down to
-  var countDownDate = new Date("Mar 28, 2021 13:34:00").getTime();
+  var countDownDate = new Date("May 18, 2021 13:34:00").getTime();
   
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -27,44 +27,18 @@
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("coming").innerHTML = "Live";
-      document.getElementById("soon").innerHTML = "Now!";
-      var countDownDate1 = new Date("April 27, 2021 13:39:00").getTime();
-      document.getElementById("demo").innerHTML = "00d " + "00h "
-       + "00m " + "00s " +"LEFT";
-      // Update the count down every 1 second
-      var x1 = setInterval(function() {
       
-        // Get today's date and time
-        var now1 = new Date().getTime();
-      
-        // Find the distance between now and the count down date
-        var distance1 = countDownDate1 - now1;
-      
-        // Time calculations for days, hours, minutes and seconds
-        var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24));
-        var hours1 = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds1 = Math.floor((distance1 % (1000 * 60)) / 1000);
-      
-        // Display the result in the element with id="demo"
-        document.getElementById("demo").innerHTML = hours1 + "h "
-        + minutes1 + "m " + seconds1 + "s " +"LEFT";
-      
-        // If the count down is finished, write some text
-        if (distance1 < 0) {
-          clearInterval(x);
-          document.getElementById("coming").innerHTML = "DEALS";
-          document.getElementById("soon").innerHTML = "EXPIRED!";
-          document.getElementById("demo").innerHTML ="BETTER LUCK NEXT TIME!"
-        }
-      }, 1000);
-
-
+      document.getElementById("demo").innerHTML = "DEAL EXPIRED!";
+    
     }
   }, 1000);
 
-  var countDownDate1 = new Date("April 28, 2021 13:39:00").getTime();
+
+//THIS IS FOR THE SMARTPHONE KI SMART DEALS
+
+
+
+  var countDownDate1 = new Date("May 16, 2021 13:39:00").getTime();
  
   // Update the count down every 1 second
   var x1 = setInterval(function() {
@@ -87,8 +61,25 @@
   
     // If the count down is finished, write some text
     if (distance1 < 0) {
-      clearInterval(x);
+      clearInterval(x1);
     
-      document.getElementById("demo1").innerHTML ="DEAL EXPIRED!"
+      document.getElementById("demo1").innerHTML ="DEAL EXPIRED!";
     }
   }, 1000);
+
+
+
+  /* footerjs  */
+
+  $(document).ready(function(){
+    $("#knowus").css("color","white");
+    $("#knowus").css("text-decoration","none");
+    $("#infosvg").css("color", "white");
+    $("#knowus").hover(function(){
+      $("#knowus").css("color","black");
+      $("#infosvg").css("color", "black");
+      }, function(){
+      $("#infosvg").css("color", "white");
+      $("#knowus").css("color","white");
+    });
+  });
