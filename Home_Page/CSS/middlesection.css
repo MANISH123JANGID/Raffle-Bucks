@@ -105,10 +105,29 @@ background-color:  transparent;
      width: 100%;
      border-radius: 5px;
  }
+
+ .catebox .imgbox3{
+  position: relative;
+  top: 0px;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow:wrap;
+}
+.imgbox3 div{
+  width: 250px;
+background-color:  transparent;
+}
+.imgbox3 div img{
+   width: 100%;
+   border-radius: 5px;
+}
+
  .catebox .imgbox1{
     position: relative;
-    top: 0px;
-    background-color:white;
+   
+    background-color:transparent;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -121,6 +140,7 @@ background-color: white;
  .imgbox1 div img{
      width: 100%;
      border-radius: 5px;
+     margin-top: 1px;
  }
  .catebox .imgbox2{
   position: relative;
@@ -134,10 +154,12 @@ background-color: white;
  .imgbox2 div{
   width: 48%;
 background-color:  transparent;
+
 }
 .imgbox2 div img{
    width: 100%;
    border-radius: 10px;
+   margin-top: 20px;
 }
 
 .catebox img:hover{
@@ -160,7 +182,30 @@ background-color:  transparent;
 }
 
 @media screen and (max-width:992px){
-    .banner{
+  .catebox .imgbox3{
+    position: relative;
+    top: 0px;
+    background-color: black;
+    height: 150px;
+    width: 100%;
+    align-items: stretch;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: space-between;
+    flex-flow:wrap;
+  }
+  .imgbox3 div{
+    width: 150px;
+    height: 150px;
+  background-color:  black;
+  float: left;
+  }
+  .imgbox3 div img{
+     width: 100%;
+     border-radius: 5px;
+  }
+  
+  .banner{
         width: 90%;
         margin-left: 5%;
         margin-top: 30px;
@@ -201,7 +246,7 @@ background-color:  transparent;
 
     .catebox .imgbox1{
         position: relative;
-        top: 20px;
+        top: 0px;
         background-color:white;
         width: 100%;
         display: flex;
@@ -215,7 +260,14 @@ background-color:  transparent;
      .imgbox1 div img{
          width: 100%;
          border-radius: 5px;
+         margin-top: 5px;
      }
+
+     .imgbox2 div img{
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 0px;
+   }
 
      .status{
          margin-top: -10px;
