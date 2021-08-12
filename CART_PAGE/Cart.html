@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
-    <link rel="stylesheet" href="/Raffle_Bucks/FRONT-END/CART_PAGE/CSS/cart.css">
-<style>
+    <link rel="stylesheet" href="css/cart.css">
 
-
-</style>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body id="body">
     <div class="fluid-container">
@@ -23,7 +20,7 @@
                     <img src="Images/cart.png"> 
                     
                 </div>
-    <div id="heading"><h1> My Cart</h1></div>
+    <div id="heading"> <h1> My Cart</h1></div>
     
             </div>
         </div>
@@ -264,9 +261,42 @@
 
 
 <div id="descriptbox">
+<div id="descriptheading"><span>CART SUMMARY</span> </div>
+
+
+<div class="pricing_details">
+    <div>Price(4 Items)</div>
+     <div>&#8377 2,47,586</div>
+</div>
+<div class="pricing_details">
+    <div>Discount</div>
+     <div style="color:green;">&#8377 -37,586</div>
+</div>
+<div class="pricing_details">
+    <div>Delivery Charges</div>
+     <div style="color:green;">Free</div>
+</div>
+<div id="coupon"><img src="Images/coupon1.png">&nbsp; Apply Coupons/Gift Vouchers &nbsp;&nbsp; <img id="up" style="width:15px;height:15px" src="Images/up.png"></div>
+<div id="coupon_full_box">
+    <div class="apply">
+    <span> Apply Coupon </span>
+<input type="text" id="coupon_code" placeholder="ENTER CODE HERE">  &nbsp;&nbsp;<button type="submit">Apply</button>
+</div>
+
+<div class="apply">
+    <span> Apply Gift Voucher</span>
+<input type="text" id="coupon_code" placeholder="ENTER CODE HERE">  &nbsp;&nbsp;<button type="submit">Apply</button>
+</div>
+
+
 
 </div>
+
 </div>
 
+
+<script type="text/javascript" src="cart.js"></script>
 </body>
+
+
 </html>

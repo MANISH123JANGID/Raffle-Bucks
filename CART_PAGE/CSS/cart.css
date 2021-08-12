@@ -82,10 +82,10 @@
 
 #probox{
     width: 65%;
-    
+
     margin-top: 1%;
     margin-left: 1%;
-    height: 100%;
+    height: 1000px;
    background-color: transparent;
 }
 #descriptbox{
@@ -95,9 +95,109 @@
     margin-top: 1%;
     margin-right: 0%;
     height: 100%;
-    background-color: yellow;
+    background-color: white;
+    border-radius: 5px;
+}
+#descriptbox span{
+font-size:22px;
+color: white;
+padding:10px;
+margin-left: 0px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 25px;
+  font-weight: 200;
+  font-style: none;
+}
+#descriptheading{
+   background-image: linear-gradient(to right,#4568dc , #b06ab3); 
+  border-radius: 5px 5px 0 0;
 }
 
+.pricing_details{
+  color: black;
+  font-size: 20px;
+  display: flex;
+  justify-content:space-between;
+  margin-top: 10px;
+}
+.pricing_details div{
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+}
+
+#coupon{
+  
+  width:95%;
+  color:white;
+  height:40px;
+  margin-left:2.5%;
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  padding:8px 10px;
+  box-sizing: border-box;
+  border-radius: 5px 5px 5px 5px;
+  background-image: linear-gradient(to right,#4568dc , #b06ab3); 
+  cursor:pointer;
+}
+#coupon img{
+ width:25px;
+ height:25px;
+}
+
+#coupon_full_box{
+  
+  width:95%;
+  color:white;
+  height:200px;
+  margin-left:2.5%;
+  margin-top: 0px;
+  font-size: 30px;
+display: none;                                                                      
+  padding:5px;
+  box-sizing: border-box;
+  border-radius: 0px 0px 5px 5px;
+  background-image: linear-gradient(to right,#4568dc , #b06ab3);
+}
+
+.rotate{
+  transform:rotate(180deg);
+}
+#coupon_full_box input{
+padding:10px 10px;
+outline:none;
+margin-left: 10px;
+margin-top: 10px;
+border-radius: 5px;
+border: 2px solid white;
+font-size: 12px;
+background-color: white;
+box-sizing: border-box;
+opacity: .8;
+}
+#coupon_full_box input:focus{
+  opacity: 1;
+  border: 2px solid black;
+}
+.apply{
+  margin-top: 5px;
+}
+.apply button{
+  background-color: white;
+  border-radius: 5px;
+  padding:8px 15px;
+  padding: 7px 14px;
+  font-size: 18px;
+  opacity: 1;
+}
+.apply button:hover{
+  background-color: white;
+  cursor: pointer;
+  transition-duration: .3s;
+  color: black;
+  opacity: .7;
+}
 #nameofdetails{
   display: flex;
   width: 100%;
@@ -114,7 +214,7 @@
 #nameofdetails span{
   font-size: 20px;
   font-weight: 600;
-  font-style: italic;
+  font-style: none;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -122,6 +222,7 @@
   display: flex;
   width: 400px;
   background-color: transparent;
+ 
 }
 .productbox{
   width: 100%;
@@ -136,7 +237,7 @@
 .productimage{
   width: 120px;
   height: 140px;
-  background-color: yellow;
+  background-color: white;
   margin-left: 10px;
   position: relative;
   top: 10px;
@@ -164,7 +265,7 @@
   text-align: left;
   margin-left: 10px;
   margin-top: 0px;
-  font-style: italic;
+  font-style: none;
   display: block;
   float: left;
 }
@@ -174,11 +275,9 @@
  right: 90px;
   margin-top: 20px;
   font-size: 20px;
-  font-style: italic;
-background-color:;
+  font-style: none;
+background-color: white;
 justify-content:center;
-
-
 }
 .subtotal{
   float: right;

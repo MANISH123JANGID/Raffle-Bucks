@@ -1,5 +1,10 @@
 
-
+$(document).ready(function(){
+  $("#coupon").click(function(){
+    $("#coupon_full_box").slideToggle();
+    $("#up").toggleClass("rotate");
+    });
+});
 function setupCart() {
   var qtyInputs = document.querySelectorAll( 'input' );
   for ( var i = 0; i < qtyInputs.length; i++ ) {
@@ -32,3 +37,6 @@ function updateTotal() {
   }
   document.querySelector( '#total' ).innerHTML = '$' + total.toFixed( 2 );
 }
+
+ 
+
